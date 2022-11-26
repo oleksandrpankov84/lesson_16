@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Home task lesson 16</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__block">
+					<div class="block__image">
+						<img src="img/illustration.svg" alt="illustration">
+					</div>
+					<div class="block__questions questions">
+						<div class="questions__title-block block-title">
+							<h3 class="block-title__subtitle">Any questions?</h3>
+							<h2 class="block-title__title">Drop us a line</h2>
+						</div>
+						<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="questions__forms">
+							<div class="fill-forms">
+								<div class="fill-forms__first-name">
+									<label for="first-name" class="fill-contacts__label">First Name*</label>
+									<input type="text" id="first-name" class="fill-forms__input" required placeholder="Your first name">
+								</div>
+								<div class="fill-forms__last-name">
+									<label for="last-name" class="fill-contacts__label">Last Name*</label>
+									<input type="text" id="last-name" class="fill-forms__input" required placeholder="Your last name">
+								</div>
+								<div class="fill-forms__email">
+									<label for="email" class="fill-contacts__label">Email*</label>
+									<input type="email" id="email" class="fill-forms__input" required placeholder="Your working email">
+								</div>
+								<div class="fill-forms__phone">
+									<label for="phone" class="fill-contacts__label">Phone*</label>
+									<input type="tel" id="phone" class="fill-forms__input" placeholder="Your phone number">
+								</div>
+								<div class="fill-forms__message">
+									<label for="message" class="fill-contacts__label">Message*</label>
+									<textarea class="fill-forms__type-message" autocomplete="off" required name="message" id="message" placeholder="Your message"></textarea>
+								</div>
+							</div>
+							<div class="questions__send send">
+								<div class="send__sheckbox checkbox">
+									<input type="checkbox" id="checkbox" value="yes" name="confirm" class="checkbox__input">
+									<label for="checkbox" class="checkbox__label">
+										<span class="checkbox__text">I agree to receive communications from Createx Online School</span>
+									</label>
+								</div>
+								<button class="questions__button button" type="submit">
+									<span>Send message</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	
+</body>
+</html>
